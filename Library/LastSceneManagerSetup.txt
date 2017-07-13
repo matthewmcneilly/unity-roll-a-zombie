@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/unity-roll-a-zombie.unity
+  isLoaded: 1
+  isActive: 1
