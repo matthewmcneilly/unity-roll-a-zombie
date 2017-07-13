@@ -1,5 +1,5 @@
 ## API Reference
 
-![alt text](https://docs.unity3d.com/Manual/index.html, "Unity")
+[Unity](https://docs.unity3d.com/Manual/index.html)
 
-![alt text](https://www.udemy.com/devslopes-unity3d/, "Udemy")
+[Udemy](https://www.udemy.com/devslopes-unity3d/)
