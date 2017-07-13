@@ -2,7 +2,7 @@
 
 A simple 3D zombie roller game...the first of many. Developed using the Unity game engine in C#. 
 
-![alt text]( "https://i.imgur.com/DrypJ39.png")
+![alt text](https://i.imgur.com/DrypJ39.png, "Game Screenshot")
 
 ## Installation
 
