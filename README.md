@@ -8,7 +8,7 @@ A simple 3D zombie roller game...the first of many. Developed using the Unity ga
 
 `Open` from the Home menu
 
-or `File > Open Project > Open` from Unity Dashboard 
+or `File > Open Project > Open` from the Unity Dashboard 
 
 ## API Reference
 
