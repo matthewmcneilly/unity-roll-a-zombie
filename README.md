@@ -20,5 +20,4 @@ or `File > Open Project > Open` from the Unity Dashboard
 
 ## License
 
-This projects source code is under the GLPv3 license. All contributions welcome. Fork away.  
-However the projects assets are not, please consider purchasing through Bitgem or the Udemy course, both are linked in the API Reference section.
+This projects source code is under the GLPv3 license. However the projects assets are not, please consider purchasing through Bitgem or the Udemy course, both are linked in the API Reference section.
