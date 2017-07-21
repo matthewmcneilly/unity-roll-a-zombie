@@ -16,6 +16,9 @@ or `File > Open Project > Open` from the Unity Dashboard
 
 [Udemy](https://www.udemy.com/devslopes-unity3d/)
 
+[Bitgem](https://shop.bitgem3d.com/)
+
 ## License
 
-This project is under the GLPv3 license. All contributions welcome. Fork away.  
+This projects source code is under the GLPv3 license. All contributions welcome. Fork away.  
+However the projects assets are not, please consider purchasing through Bitgem or the Udemy course, both are linked in the API Reference section.
