@@ -10,18 +10,18 @@ public class GameManager : MonoBehaviour {
 	public Text scoreText;
 	public GameObject selectedZombie;
 	public List<GameObject> zombies;
-	// Vector3 === x,y and z 
+	// Vector3 is your x,y and z axis
 	public Vector3 selectedSize;
-	public Vector3 defaultSize; 
+	public Vector3 defaultSize;
 
 	// Use this for initialization
 	void Start () {
-		// Call SelectZombie and pass in selectedZombie 
+		// Call SelectZombie and pass in selectedZombie
 		SelectZombie (selectedZombie);
 		scoreText.text = "Score: " + score;
-		
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 
@@ -40,12 +40,16 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void SelectZombie(GameObject newZombie) {
+		// reset currently selected zombies dimensions to default
 		selectedZombie.transform.localScale = defaultSize;
-		selectedZombie = newZombie; 
-		// Make selectedZombies size different than default (bigger)  
-		newZombie.transform.localScale = selectedSize; 
+		selectedZombie = newZombie;
+		// Make new selectedZombies size different than default (bigger)
+		newZombie.transform.localScale = selectedSize;
 	}
 
+	// when left key pressed
+	// select next zombie to the left unless at position 0
+	// if so then select the far right zombie
 	void GetZombieLeft() {
 		if (selectedZombiePosition == 0) {
 			selectedZombiePosition = 3;
@@ -56,6 +60,9 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	// if right key pressed
+	// select next zombie to the right unless at the end of row
+	// if so then select the first zombie
 	void GetZombieRight() {
 		if (selectedZombiePosition == 3) {
 			selectedZombiePosition = 0;
@@ -66,14 +73,17 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	// if up key pressed
+	// push zombie up the screen
 	void PushUp() {
 		Rigidbody rb = selectedZombie.GetComponent<Rigidbody> ();
 		rb.AddForce (0, 0, 10, ForceMode.Impulse);
 	}
 
+
 	public void AddPoint() {
 		score += 1;
-		scoreText.text = "Score: " + score; 
+		scoreText.text = "Score: " + score;
 
 	}
 }
